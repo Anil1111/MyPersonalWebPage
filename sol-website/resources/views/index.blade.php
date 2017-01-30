@@ -1,8 +1,8 @@
 @extends('layouts.default')
 
-@section('imports-css')
-
-<link rel="stylesheet" type="text/css" href="css/marketing.css">
+@section('title')
+	Inicio - Só os Lagados
+@endsection
 
 @section('header')
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -69,10 +69,10 @@
   </div>
 </div>
 @endsection
-<br>
+
 @section('footer')
 <br>
 <footer class="container-fluid text-center">
-  <p>Só os Lagados - Copyright 2017</p>
+  <p>Copyright 2017 - Só os Lagados</p>
 </footer>
 @endsection

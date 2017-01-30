@@ -1,29 +1,52 @@
 @extends('layouts.default')
 
-@section('header')
+@section('title')
+Notícias - Só os Lagados
+@endsection
 
+@section('imports-css')
+	<link rel="stylesheet" type="text/css" href="css/news.css">
+@endsection
+
+@section('header')
+<div class="jumbotron">
+	<div class="container">
+		<h1>Noticias</h1>
+	</div>
+</div>
 @endsection
     
 @section('content')
-    <div class="col-md-12">
-    	<div class="news-unit">
-	    	<div class="page-header">
-	    		<h2>Novidade na Área!</h2>
-	    	</div>
+<div class="container">
+	<div class="row col-md-10">
+		<div class="news-image col-md-4">
+			<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+		</div>
 
-	    	<div class="news-body">
-	    		<div class="news-title">
-	            	<h3>Tutorial de HearthStone - Meta Atual</h3>
-	        	</div>
+		<div class="news-content col-md-8">
+			<h3 class="news-title">Hatshepsut fala sobre o meta atual.</h3>
+			<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+			<p><a href="#">Leia mais...</a></p>
+		</div>
+		<br>
+		<div class="news-image col-md-4">
+			<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+		</div>
 
-	        	<div class="news-content">
-	        		<p>Só os Lagados posta seu primeiro vídeo sobre o famoso jogo da blizzard HearthStone! Nosso jogador de Hearthstone indicará pra vocês como atuar diante deste novo meta e como montar um deck para que você possa pelo menor chegar ao rank desejado de todos o rank 5.</p>	
-	        	</div>
+		<div class="news-content col-md-8">
+			<h3 class="news-title">Hatshepsut fala sobre o meta atual.</h3>
+			<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+			<p><a href="#">Leia mais...</a></p>
+		</div>		
+	</div>
 
-	        	<div class="news-link">
-	        		<iframe width="720" height="420" src="https://www.youtube.com/embed/1zlgi3mrjBE" frameborder="0" allowfullscreen></iframe>
-	        	</div>  
-	    	</div>
-	    </div>
-    </div>
+
+	<div class="row col-md-2 sidebar-news">	
+		<h4>Destaques</h4>
+		<ul>
+			<li>Hearthstone</li>
+		</ul>
+	</div>	
+</div>
+
 @endsection
